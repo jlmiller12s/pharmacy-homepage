@@ -1,2 +1,40 @@
 * { margin: 0; padding: 0; box-sizing: border-box; }
-body { font-family: sans-serif; }
+body { font-family: 'Arial', sans-serif; background-color: #f0f8ff; color: #333; }
+
+.hero {
+    background-color: #e0f7fa;
+    padding: 60px 20px;
+    text-align: center;
+    color: #004d40;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.hero p {
+    font-size: 1.25rem;
+    margin-bottom: 30px;
+}
+
+.hero .cta-button {
+    background-color: #00796b;
+    color: #ffffff;
+    padding: 15px 30px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.hero .cta-button:hover {
+    background-color: #004d40;
+}
+
+.hero .cta-button:focus {
+    outline: 2px solid #004d40;
+    outline-offset: 2px;
+}
