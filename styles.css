@@ -17,7 +17,24 @@ p {
 }
 
 nav {
+    position: relative;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
     display: none;
+}
+
+nav.open ul {
+    display: block;
+}
+
+nav button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5em;
 }
 
 /* Touch targets */
@@ -28,8 +45,8 @@ button, a {
 
 /* Tablet Styles */
 @media (min-width: 768px) {
-    nav {
-        display: block;
+    nav ul {
+        display: flex;
     }
 
     h1 {
