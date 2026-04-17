@@ -1,2 +1,57 @@
 * { margin: 0; padding: 0; box-sizing: border-box; }
 body { font-family: sans-serif; }
+
+/* Mobile Styles */
+body {
+    padding: 10px;
+}
+
+h1 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+nav {
+    display: none;
+}
+
+/* Touch targets */
+button, a {
+    min-height: 44px;
+    min-width: 44px;
+}
+
+/* Tablet Styles */
+@media (min-width: 768px) {
+    nav {
+        display: block;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    p {
+        font-size: 1.1em;
+    }
+}
+
+/* Desktop Styles */
+@media (min-width: 1024px) {
+    body {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 2.5em;
+    }
+
+    p {
+        font-size: 1.2em;
+    }
+}
