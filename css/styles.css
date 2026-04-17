@@ -1,6 +1,61 @@
 * { margin: 0; padding: 0; box-sizing: border-box; }
 body { font-family: 'Arial', sans-serif; background-color: #f0f8ff; color: #333; }
 
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #00796b;
+    color: #ffffff;
+}
+
+.logo h1 {
+    font-size: 1.5rem;
+}
+
+nav {
+    display: none;
+}
+
+nav.active {
+    display: block;
+}
+
+.hamburger {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.hamburger-icon {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #ffffff;
+    position: relative;
+}
+
+.hamburger-icon::before,
+.hamburger-icon::after {
+    content: '';
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #ffffff;
+    position: absolute;
+    transition: transform 0.3s ease;
+}
+
+.hamburger-icon::before {
+    transform: translateY(-8px);
+}
+
+.hamburger-icon::after {
+    transform: translateY(8px);
+}
+
 .hero {
     background-color: #e0f7fa;
     padding: 60px 20px;

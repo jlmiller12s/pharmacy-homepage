@@ -11,7 +11,10 @@
         <div class="logo">
             <h1>Pharmacy Logo</h1>
         </div>
-        <nav aria-label="Main Navigation">
+        <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navigation">
+            <span class="hamburger-icon"></span>
+        </button>
+        <nav id="navigation" aria-label="Main Navigation">
             <ul>
                 <li><a href="#hero">Home</a></li>
                 <li><a href="#services">Services</a></li>
@@ -22,7 +25,7 @@
     </header>
     <main>
         <section id="hero">
-            <h2>Welcome to Our Pharmacy</h2>
+            <h1>Welcome to Our Pharmacy</h1>
             <p>Your health is our priority. Discover our services today!</p>
             <a href="#services" class="cta-button">Explore Services</a>
         </section>
@@ -56,5 +59,17 @@
             <p>Hours: Mon-Fri 9am - 6pm</p>
         </address>
     </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const hamburger = document.querySelector('.hamburger');
+            const nav = document.getElementById('navigation');
+
+            hamburger.addEventListener('click', function() {
+                const expanded = this.getAttribute('aria-expanded') === 'true' || false;
+                this.setAttribute('aria-expanded', !expanded);
+                nav.classList.toggle('active');
+            });
+        });
+    </script>
 </body>
 </html>
