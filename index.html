@@ -24,7 +24,7 @@
     </main>
     <script>
         document.getElementById('menu-toggle').addEventListener('click', function() {
-            const nav = document.getElementById('navigation-menu');
+            const nav = this.parentElement;
             const isExpanded = this.getAttribute('aria-expanded') === 'true';
             this.setAttribute('aria-expanded', !isExpanded);
             nav.classList.toggle('open');
