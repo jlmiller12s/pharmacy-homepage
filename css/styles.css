@@ -24,6 +24,12 @@ nav ul {
     list-style: none;
     padding: 0;
     display: none;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
 }
 
 nav.open ul {
@@ -37,6 +43,21 @@ nav button {
     font-size: 1.5em;
 }
 
+nav ul li {
+    border-bottom: 1px solid #ccc;
+}
+
+nav ul li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+}
+
+nav ul li a:hover {
+    background-color: #f0f0f0;
+}
+
 /* Touch targets */
 button, a {
     min-height: 44px;
@@ -47,6 +68,8 @@ button, a {
 @media (min-width: 768px) {
     nav ul {
         display: flex;
+        position: static;
+        border: none;
     }
 
     h1 {
