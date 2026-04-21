@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pharmacy Homepage</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <header>
@@ -16,20 +16,20 @@
         </button>
         <nav id="navigation" aria-label="Main Navigation">
             <ul>
-                <li><a href="#hero">Home</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#hero" tabindex="0">Home</a></li>
+                <li><a href="#services" tabindex="0">Services</a></li>
+                <li><a href="#about" tabindex="0">About</a></li>
+                <li><a href="#contact" tabindex="0">Contact</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section id="hero">
+        <section id="hero" tabindex="-1">
             <h1>Welcome to Our Pharmacy</h1>
             <p>Your health is our priority. Discover our services today!</p>
             <a href="#services" class="cta-button">Explore Services</a>
         </section>
-        <section id="services">
+        <section id="services" tabindex="-1">
             <h2>Our Services</h2>
             <div class="service-card">
                 <h3>Prescription Refills</h3>
@@ -44,12 +44,12 @@
                 <p>Wide range of health and wellness products.</p>
             </div>
         </section>
-        <section id="about">
+        <section id="about" tabindex="-1">
             <h2>About Us</h2>
             <p>We are a community-focused pharmacy dedicated to providing personalized healthcare services.</p>
         </section>
     </main>
-    <footer id="contact">
+    <footer id="contact" tabindex="-1">
         <h2>Contact Us</h2>
         <address>
             <p>123 Pharmacy Lane</p>
