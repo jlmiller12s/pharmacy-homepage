@@ -154,3 +154,18 @@ nav.active {
 section {
     margin-bottom: 40px;
 }
+
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: #00796b;
+    color: white;
+    padding: 8px;
+    z-index: 100;
+    transition: top 0.3s ease;
+}
+
+.skip-link:focus {
+    top: 0;
+}
